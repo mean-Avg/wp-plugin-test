@@ -15,8 +15,11 @@ echo "ello <br>";
    $dbpass = 'oY1TS7K5n4';
    $i = 1;
    while($i<5){
-       if($conn = mysql_connect($dbhost, $dbuser, $dbpass))
-       break;
+       if($conn = (mysql_connect($dbhost, $dbuser, $dbpass))){
+        mysql_close($conn);
+        break;
+       }
+   
     echo "$i <br>";
     $i+=;
    }
@@ -48,7 +51,7 @@ echo "ello <br>";
    
 //    echo "Fetched data successfully\n";
    
-   mysql_close($conn);
+   
 ?>
 
 </body>
