@@ -14,8 +14,9 @@ echo "ello <br>";
    $dbuser = 'FtHAFS7GzI';
    $dbpass = 'oY1TS7K5n4';
    $i = 1;
+   $conn = mysql_connect($dbhost, $dbuser, $dbpass)
    while($i<5){
-       if($conn = (mysql_connect($dbhost, $dbuser, $dbpass))){
+       if($conn){
         mysql_close($conn);
         break;
        }
