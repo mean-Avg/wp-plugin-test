@@ -6,15 +6,10 @@
 
 <h1>My first PHP page</h1>
 
-<?php 
- $dbhost = 'remotesql.com:3306';
- $dbuser = 'FtHAFS7GzI';
- $dbpass = 'oY1TS7K5n4';
-
-echo "ello <br>".$dbhost."<br>";
-?>
-
 <?php
+
+echo "ello <br>";
+
    $dbhost = 'remotesql.com:3306';
    $dbuser = 'FtHAFS7GzI';
    $dbpass = 'oY1TS7K5n4';
@@ -22,6 +17,7 @@ echo "ello <br>".$dbhost."<br>";
    $conn = mysql_connect($dbhost, $dbuser, $dbpass);
    
    if(! $conn ) {
+       echo "not connecting";
       die('Could not connect: ' . mysql_error());
    }
    else echo "connected <br>";
