@@ -23,7 +23,7 @@ echo "ello <br>";
    else echo "connected <br>";
    
    $sql = 'SELECT pid, company_name, project_type, year, budget FROM free_tier_list';
-   mysql_select_db('FtHAFS7GzI');
+   mysql_select_db('FtHAFS7GzI', $conn);
    $retval = mysql_query( $sql, $conn );
    
    if(! $retval ) {
