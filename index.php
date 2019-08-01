@@ -6,6 +6,10 @@
 
 <h1>My first PHP page</h1>
 
+<?php 
+echo "ello";
+?>
+
 <?php
    $dbhost = 'remotesql.com:3306';
    $dbuser = 'FtHAFS7GzI';
