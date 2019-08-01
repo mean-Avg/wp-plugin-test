@@ -20,6 +20,7 @@ echo "ello";
    if(! $conn ) {
       die('Could not connect: ' . mysql_error());
    }
+   else echo "connected <br>";
    
    $sql = 'SELECT pid, company_name, project_type, year, budget FROM free_tier_list';
    mysql_select_db('FtHAFS7GzI');
@@ -27,7 +28,7 @@ echo "ello";
    
    if(! $retval ) {
       die('Could not get data: ' . mysql_error());
-   }
+   }else echo "data retrieved <br>";
    
    while($row = mysql_fetch_assoc($retval)) {
       echo "PID :{$row['pid']}  <br> ".
