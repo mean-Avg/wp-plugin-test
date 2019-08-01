@@ -17,14 +17,14 @@
       die('Could not get data: ' . mysql_error());
    }
    
-   while($row = mysql_fetch_assoc($retval)) {
-      echo "PID :{$row['pid']}  <br> ".
-         "COMPANY : {$row['company_name']} <br> ".
-         "PROJECT TYPE : {$row['project_type']} <br> ".
-         "YEAR : {$row['year']} <br> ".
-         "BUDGET : {$row['budget']} <br> ".
-         "--------------------------------<br>";
-   }
+//    while($row = mysql_fetch_assoc($retval)) {
+//       echo "PID :{$row['pid']}  <br> ".
+//          "COMPANY : {$row['company_name']} <br> ".
+//          "PROJECT TYPE : {$row['project_type']} <br> ".
+//          "YEAR : {$row['year']} <br> ".
+//          "BUDGET : {$row['budget']} <br> ".
+//          "--------------------------------<br>";
+//    }
    
    echo "Fetched data successfully\n";
    
