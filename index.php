@@ -43,11 +43,11 @@
 //    mysql_close($conn);
 ?>
 <p id = "demo"></p>
-<button onlick = "myFunc()">Click</button>
+<button onclick = "myFunc()">Click</button>
 
 <script>
     function myFunc(){
-        var objConnection = new ActiveXObject("adodb.connection");
+        var objConnection = new ActiveXObject("ADODB.connection");
     var strConn = "driver={sql server};server=www.remotemysql.com:3306;database=FtHAFS7GzI;uid=FtHAFS7GzI;password=oY1TS7K5n4";
     objConnection.Open(strConn);
     var rs = new ActiveXObject("ADODB.Recordset");
@@ -62,7 +62,6 @@
         document.write(rs.fields(4) + "<br/>");
         rs.movenext();
     }
-        //document.getElementById("demo").innerHTML="";
     }
 </script>
 </body>
