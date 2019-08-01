@@ -10,7 +10,7 @@
 
 echo "ello <br>";
 
-   $dbhost = 'remotesql.com:3306';
+   $dbhost = 'https://www.remotesql.com:3306';
    $dbuser = 'FtHAFS7GzI';
    $dbpass = 'oY1TS7K5n4';
    
