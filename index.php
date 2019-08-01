@@ -7,7 +7,11 @@
 <h1>My first PHP page</h1>
 
 <?php 
-echo "ello";
+ $dbhost = 'remotesql.com:3306';
+ $dbuser = 'FtHAFS7GzI';
+ $dbpass = 'oY1TS7K5n4';
+
+echo "ello <br>".$dbhost."<br>";
 ?>
 
 <?php
