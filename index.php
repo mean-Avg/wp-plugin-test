@@ -21,7 +21,7 @@ echo "ello <br>";
    }
    else echo "connected <br>";
    
-   $sql = 'SELECT pid, company_name, project_type, year, budget FROM free_tier_list';
+   $sql = 'SELECT pid, company_name, project_type, budget FROM free_tier_list';
    mysql_select_db('FtHAFS7GzI');
    $retval = mysql_query( $sql, $conn );
    
@@ -33,7 +33,6 @@ echo "ello <br>";
       echo "PID :{$row['pid']}  <br> ".
          "COMPANY : {$row['company_name']} <br> ".
          "PROJECT TYPE : {$row['project_type']} <br> ".
-         "YEAR : {$row['year']} <br> ".
          "BUDGET : {$row['budget']} <br> ".
          "--------------------------------<br>";
    }
