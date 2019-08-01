@@ -13,10 +13,16 @@ echo "ello <br>";
    $dbhost = 'https://www.remotesql.com:3306';
    $dbuser = 'FtHAFS7GzI';
    $dbpass = 'oY1TS7K5n4';
+   $i = 1;
+   while($i<5){
+       if($conn = mysql_connect($dbhost, $dbuser, $dbpass))
+       break;
+    echo "$i <br>";
+    $i+=;
+   }
    
-   $conn = mysql_connect($dbhost, $dbuser, $dbpass);
    
-   echo "connected";
+   //echo "connected";
 //    if(! $conn ) {
 //        echo "not connecting";
 //       die('Could not connect: ' . mysql_error());
