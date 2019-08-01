@@ -1,3 +1,11 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My first PHP page</h1>
+
 <?php
    $dbhost = 'remotesql.com:3306';
    $dbuser = 'FtHAFS7GzI';
@@ -9,13 +17,13 @@
       die('Could not connect: ' . mysql_error());
    }
    
-   $sql = 'SELECT pid, company_name, project_type, year, budget FROM free_tier_list';
-   mysql_select_db('FtHAFS7GzI');
-   $retval = mysql_query( $sql, $conn );
+//    $sql = 'SELECT pid, company_name, project_type, year, budget FROM free_tier_list';
+//    mysql_select_db('FtHAFS7GzI');
+//    $retval = mysql_query( $sql, $conn );
    
-   if(! $retval ) {
-      die('Could not get data: ' . mysql_error());
-   }
+//    if(! $retval ) {
+//       die('Could not get data: ' . mysql_error());
+//    }
    
 //    while($row = mysql_fetch_assoc($retval)) {
 //       echo "PID :{$row['pid']}  <br> ".
@@ -30,3 +38,6 @@
    
    mysql_close($conn);
 ?>
+
+</body>
+</html>
